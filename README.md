@@ -1,4 +1,4 @@
-# Contracts-REST-API
+# Contracts REST API
 
 A robust RESTful API built with **TypeScript**, **Fastify**, and **TypeORM** for managing contracts between clients and contractors. This API simulates a contract management platform where clients can create contracts with contractors, who complete jobs and get paid.
 
