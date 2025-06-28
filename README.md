@@ -223,32 +223,6 @@ Content-Type: application/json
 
 **Note:** Deposits cannot exceed 25% of the total unpaid jobs at the time of deposit.
 
-## 🗄️ Data Models
-
-### Profile
-- `id`: Primary key
-- `firstName`: User's first name
-- `lastName`: User's last name
-- `profession`: User's profession
-- `balance`: Current account balance
-- `type`: "Client" or "Contractor"
-- `username`: Unique username
-- `password`: Hashed password
-
-### Contract
-- `id`: Primary key
-- `terms`: Contract terms and conditions
-- `status`: "new", "in_progress", or "terminated"
-- `client`: Reference to client profile
-- `contractor`: Reference to contractor profile
-
-### Job
-- `id`: Primary key
-- `description`: Job description
-- `price`: Job price
-- `paid`: Payment status
-- `paymentDate`: Date when payment was made
-- `contract`: Reference to parent contract
 
 ## 🔒 Security Features
 
@@ -258,12 +232,7 @@ Content-Type: application/json
 - **Error Handling**: Proper error handling with meaningful messages
 - **Authorization**: Route-level authorization checks
 
-## 🧪 Testing
 
-To run tests (when implemented):
-```bash
-npm test
-```
 
 ## 📊 Business Rules
 
@@ -282,56 +251,17 @@ npm test
 ### Available Scripts
 
 - `npm start`: Start the development server with hot reload
-- `npm test`: Run tests (when implemented)
 
-### Project Structure
 
-```
-src/
-├── app.ts                 # Application entry point
-├── dbConnection.ts        # Database configuration
-├── controllers/          # Request handlers
-│   ├── profile.controller.ts
-│   ├── contract.controller.ts
-│   ├── job.controller.ts
-│   └── balance.controller.ts
-├── services/            # Business logic
-│   ├── profile.service.ts
-│   ├── contract.service.ts
-│   ├── job.service.ts
-│   └── balance.service.ts
-├── models/              # Data models
-│   ├── profile.model.ts
-│   ├── contract.model.ts
-│   └── job.model.ts
-├── routes/              # API routes
-│   ├── profile.route.ts
-│   ├── contract.route.ts
-│   ├── job.route.ts
-│   └── balance.route.ts
-└── utils/               # Utilities
-    └── auth.ts
-```
 
 ## 🤝 Contributing
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+Pull requests are welcome! For major changes, please open an issue first.
 
 ## 📝 License
 
-This project is licensed under the ISC License.
+This project is licensed under the MIS License.
 
-## 🆘 Support
-
-If you encounter any issues or have questions, please:
-
-1. Check the existing issues in the repository
-2. Create a new issue with detailed information about your problem
-3. Include error messages, steps to reproduce, and environment details
 
 ## 🔮 Future Enhancements
 
@@ -344,6 +274,3 @@ If you encounter any issues or have questions, please:
 - [ ] Email notifications
 - [ ] File upload for contract documents
 
----
-
-**Built with ❤️ using TypeScript, Fastify, and TypeORM**
