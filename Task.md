@@ -110,13 +110,4 @@ Represents a paid or unpaid task in a contract.
 - **POST** `/balances/deposit/:userId` — deposit into client's balance  
   - must not exceed 25% of unpaid job total at deposit time
 
----
 
-### 🔗 Google Sheets Integration
-
-- Store transaction logs in Google Sheets:
-  - when a **client pays** for a job  
-  - when a **client deposits** funds  
-- Shape data clearly  
-- Optionally: trigger payments/deposits from the sheet  
-- External integration code should be included in the repo
